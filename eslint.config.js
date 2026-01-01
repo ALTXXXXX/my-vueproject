@@ -17,8 +17,13 @@ export default defineConfig([
         ...globals.browser,
       },
     },
+    //添加不再强制要求组件重命名的配置
+    rules:{
+      'vue/multi-word-component-names':"false"
+    }
   },
 
   js.configs.recommended,
   ...pluginVue.configs['flat/essential'],
+
 ])
